@@ -13,7 +13,7 @@ export function DailyPrompts() {
   return (
     <section
       id="prompts"
-      className="section section--cream has-index"
+      className="section section--white has-index"
       data-index="04"
     >
       <div className="container">

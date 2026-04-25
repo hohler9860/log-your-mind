@@ -22,7 +22,7 @@ export function FollowUps() {
   return (
     <section
       id="followups"
-      className="section section--white has-index"
+      className="section section--cream has-index"
       data-index="05"
     >
       <div className="container">

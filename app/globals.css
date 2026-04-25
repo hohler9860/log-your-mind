@@ -232,8 +232,22 @@ button{ font: inherit; color: inherit; cursor: pointer; background: none; border
 }
 
 /* ======== HERO ======== */
-.hero{ position: relative; padding: clamp(110px, 18vh, 150px) clamp(18px, 4vw, 32px) clamp(70px, 10vh, 110px); overflow: hidden; isolation: isolate; }
+.hero{ position: relative; padding: clamp(96px, 14vh, 130px) clamp(18px, 4vw, 32px) clamp(48px, 7vh, 80px); overflow: hidden; isolation: isolate; }
 .hero__inner{ max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; z-index: 1; }
+/* split layout: phone left, text right */
+.hero__inner--split{
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.1fr);
+  gap: clamp(36px, 6vw, 80px);
+  align-items: center;
+  text-align: left;
+}
+.hero__phone-col{ display: grid; place-items: center; width: 100%; }
+.hero__text-col{ display: flex; flex-direction: column; align-items: flex-start; text-align: left; }
+@media (max-width: 880px){
+  .hero__inner--split{ grid-template-columns: 1fr; gap: 36px; text-align: center; }
+  .hero__text-col{ align-items: center; text-align: center; }
+}
 .hero__eye{ margin-top: 10px; }
 .hero__title{
   margin: 32px auto 0;
@@ -280,13 +294,15 @@ button{ font: inherit; color: inherit; cursor: pointer; background: none; border
   .rotor__word{ white-space: normal; }
 }
 
-.hero__sub{ max-width: 50ch; margin: 32px auto 0; font-size: clamp(15px, 1.25vw, 19px); line-height: 1.55; color: var(--fg-muted); }
-.hero__cta{ display: inline-flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 32px 0 12px; }
+.hero__sub{ max-width: 50ch; margin: 24px auto 0; font-size: clamp(15px, 1.25vw, 18px); line-height: 1.55; color: var(--fg-muted); }
+.hero__cta{ display: inline-flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 28px 0 10px; }
 .hero__hint{ font-size: 13px; color: var(--fg-subtle); margin: 8px 0 0; }
 
-.hero__demo{ width: 100%; max-width: 1100px; margin: 32px auto 0; display: grid; grid-template-columns: 1.55fr 0.85fr; gap: 28px; align-items: center; }
-.hero__demo--phone-only{ grid-template-columns: 1fr; place-items: center; max-width: 480px; }
-@media (max-width: 900px){ .hero__demo{ grid-template-columns: 1fr; gap: 32px; margin-top: 40px; } }
+/* split overrides: zero-out auto margins so left-alignment is honest */
+.hero__text-col .hero__title{ margin-top: 18px; max-width: none; font-size: clamp(2.2rem, 6.5vw, 5.4rem) !important; }
+.hero__text-col .hero__sub{ margin-left: 0; margin-right: 0; max-width: 44ch; }
+.hero__text-col .hero__cta{ margin: 28px 0 10px; }
+.hero__text-col .hero__hint{ margin: 8px 0 0; }
 
 /* Live strip — chromeless, lives inline on the hero (no card, no shadow) */
 .live-strip{ display: flex; flex-direction: column; gap: 14px; }
@@ -333,7 +349,7 @@ button{ font: inherit; color: inherit; cursor: pointer; background: none; border
 .dot-live{ width: 6px; height: 6px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 8px var(--amber); animation: pulse 1.6s ease-in-out infinite; }
 
 .hero__phone{ position: relative; display: grid; place-items: center; }
-.hero__phone-render{ position: relative; width: clamp(260px, 46vw, 420px); line-height: 0; }
+.hero__phone-render{ position: relative; width: clamp(220px, 32vw, 340px); line-height: 0; }
 .hero__phone-render img{ display: block; width: 100%; height: auto; }
 
 /* ======== SHOWCASE ======== */
@@ -350,10 +366,10 @@ button{ font: inherit; color: inherit; cursor: pointer; background: none; border
 
 .float-tag{ position: absolute; padding: 8px 14px; background: var(--white); border: 1.5px solid var(--charcoal); border-radius: 9999px; font-size: 12.5px; font-weight: 500; color: var(--charcoal); white-space: nowrap; box-shadow: 4px 4px 0 0 var(--charcoal); animation: float-bob 5s ease-in-out infinite; }
 .float-tag span{ color: var(--amber); margin-right: 4px; font-weight: 700; }
-.float-tag--a{ top: 10%; left: -10%; animation-delay: 0s; }
-.float-tag--b{ top: 52%; right: -14%; background: var(--amber); border-color: var(--charcoal); animation-delay: -2s; }
+.float-tag--a{ top: 8%; left: -4%; animation-delay: 0s; }
+.float-tag--b{ top: 50%; right: -2%; background: var(--amber); border-color: var(--charcoal); animation-delay: -2s; }
 .float-tag--b span{ color: var(--charcoal); }
-.float-tag--c{ bottom: 10%; left: -10%; animation-delay: -3.5s; }
+.float-tag--c{ bottom: 8%; left: -2%; animation-delay: -3.5s; }
 @keyframes float-bob{ 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-8px); } }
 @media (max-width: 700px){ .float-tag{ display: none; } }
 

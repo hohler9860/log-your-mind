@@ -37,7 +37,7 @@ export function Pricing() {
   return (
     <section
       id="pricing"
-      className="section section--white has-index"
+      className="section section--cream has-index"
       data-index="13"
     >
       <div className="container">

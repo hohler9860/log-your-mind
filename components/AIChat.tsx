@@ -11,7 +11,7 @@ export function AIChat() {
   return (
     <section
       id="chat"
-      className="section section--cream has-index"
+      className="section section--white has-index"
       data-index="06"
     >
       <div className="container">

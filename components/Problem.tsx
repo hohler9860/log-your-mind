@@ -4,7 +4,7 @@ export function Problem() {
   return (
     <section
       id="problem"
-      className="section section--cream has-index"
+      className="section section--white has-index"
       data-index="01"
     >
       <div className="container">

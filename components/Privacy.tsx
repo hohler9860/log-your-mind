@@ -68,7 +68,7 @@ export function Privacy() {
   return (
     <section
       id="privacy"
-      className="section section--cream has-index"
+      className="section section--white has-index"
       data-index="10"
     >
       <div className="container">

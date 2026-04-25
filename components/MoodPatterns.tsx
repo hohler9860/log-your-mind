@@ -36,7 +36,7 @@ export function MoodPatterns() {
   return (
     <section
       id="patterns"
-      className="section section--white has-index"
+      className="section section--cream has-index"
       data-index="08"
     >
       <div className="container">

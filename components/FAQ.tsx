@@ -37,7 +37,7 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="section section--white has-index"
+      className="section section--cream has-index"
       data-index="14"
     >
       <div className="container">

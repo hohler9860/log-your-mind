@@ -53,7 +53,7 @@ export function Testimonial() {
 
   return (
     <section
-      className="quote-sec section--cream has-index"
+      className="quote-sec section--white has-index"
       data-index="08"
     >
       <div className="container container--narrow">

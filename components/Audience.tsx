@@ -120,7 +120,7 @@ const AUD = [
 
 export function Audience() {
   return (
-    <section className="section section--cream has-index audsec" data-index="12">
+    <section className="section section--white has-index audsec" data-index="12">
       <div className="container">
         <div className="center">
           <span className="eyebrow" data-in>
