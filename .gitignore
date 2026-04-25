@@ -1,0 +1,16 @@
+node_modules
+.next
+.DS_Store
+.env
+.env.local
+.env.production
+.vercel
+next-env.d.ts
+tsconfig.tsbuildinfo
+_static_backup
+
+# keep the old static files accessible but out of git
+/index.html
+/styles.css
+/script.js
+/assets
