@@ -1,23 +1,31 @@
 const QS = [
   {
-    q: "Is this a therapy replacement?",
-    a: "No. It's a tool for getting the stuff in your head out of your head. If you need a therapist, see a therapist. This makes those sessions, and the weeks in between, a lot more useful.",
+    q: "Is Mialo a therapy replacement?",
+    a: "No. It's a place to get the stuff in your head out of your head. If you need a therapist, see a therapist. Mialo makes those sessions, and the weeks in between, a lot more useful.",
   },
   {
-    q: "How does it stay private if AI analyzes?",
-    a: "Transcription and pattern analysis run on device. When you enable the MCP endpoint, you choose which AI sees your journal, and only what you let it see.",
+    q: "How is this different from voice memos?",
+    a: "Voice memos give you a wall of unlabeled clips. Mialo asks you a question, transcribes what you say, tags the mood, and follows up days later. It's the difference between hoarding files and having a record you can actually read.",
   },
   {
-    q: "What happens if I delete the app?",
-    a: "It's gone. No backups, no shadow copies, no \"we still have this on a server for debugging.\" You can wipe your data without deleting the app too, from Settings.",
+    q: "What does the AI actually see?",
+    a: "Transcription and pattern analysis run on device. Nothing leaves your phone unless you turn on the optional MCP endpoint, and even then you control what it can read. We never see or hear your recordings.",
   },
   {
-    q: "Do I have to pay?",
-    a: "The core journal is free. Long-range patterns and the MCP endpoint are on a quiet paid tier when you're ready.",
+    q: "What happens after my 7-day trial ends?",
+    a: "You keep every recording, every transcript, every mood tag. You can still view and play back everything you logged. You lose new recording, new AI transcription, mood charts, follow-ups, and chat. Subscribe and they're back instantly.",
   },
   {
-    q: "Will the nudges drive me crazy?",
-    a: "No. A couple of gentle nudges at random times. Log once and we stop for the rest of the day.",
+    q: "What if I delete the app?",
+    a: "It's gone. No backups, no shadow copies, no \"we still have this on a server for debugging.\" If you want to wipe data without uninstalling, there's a one-tap reset in Settings.",
+  },
+  {
+    q: "Will the follow-up notifications drive me crazy?",
+    a: "No. They're spaced out, gentle, and you can dismiss any of them with one tap. If you don't engage, Mialo backs off. The whole point is to feel like a friend, not a habit tracker.",
+  },
+  {
+    q: "Why voice and not typing?",
+    a: "Typing makes you edit. You stop the thought, fix the spelling, second-guess the tone. By the time you hit send, you've sanded down the thing you actually meant. Speaking skips all of that.",
   },
   {
     q: "What phones does it work on?",
@@ -30,7 +38,7 @@ export function FAQ() {
     <section
       id="faq"
       className="section section--white has-index"
-      data-index="09"
+      data-index="14"
     >
       <div className="container">
         <div className="center">

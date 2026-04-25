@@ -10,16 +10,17 @@ export function Finale() {
 
           <span className="eyebrow finale__eye">
             <span className="eyebrow-dot" aria-hidden="true" />
-            Free · iPhone · No account
+            7-day free trial · iPhone · No account
           </span>
 
           <h2 className="display finale__h">
-            Press record. <em className="display-serif">You&apos;re done.</em>
+            Say it out loud. <em className="display-serif">Stop carrying it around.</em>
           </h2>
 
           <p className="finale__sub">
-            Thirty seconds of talking and your head is emptier. Come back when
-            you want to notice what you&apos;ve been noticing.
+            Thirty seconds of talking and your head is emptier. Mialo
+            transcribes it, tags how you sounded, and follows up days later
+            like a thoughtful friend. Free for the first week. No card needed.
           </p>
 
           <div className="finale__cta">
@@ -37,7 +38,7 @@ export function Finale() {
           </div>
 
           <p className="finale__meta">
-            Built by a solo dev who kept talking to himself in the car.
+            Built by someone who kept talking to himself in the car.
           </p>
         </div>
       </div>

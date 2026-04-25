@@ -120,17 +120,19 @@ const AUD = [
 
 export function Audience() {
   return (
-    <section className="section section--cream has-index audsec" data-index="07">
+    <section className="section section--cream has-index audsec" data-index="12">
       <div className="container">
         <div className="center">
           <span className="eyebrow" data-in>
-            Built for
+            Built for ADHD brains
           </span>
-          <h2 className="display section__h" data-in style={{ maxWidth: "18ch" }}>
-            Brains that think <em className="display-serif">by talking.</em>
+          <h2 className="display section__h" data-in style={{ maxWidth: "20ch" }}>
+            Designed for fast minds. <em className="display-serif">Works for anyone who thinks out loud.</em>
           </h2>
           <p className="section__sub" data-in>
-            You probably recognize yourself in at least one of these.
+            Mialo started as a tool for people whose thoughts move faster
+            than their fingers. Turns out that&apos;s most of us, more days
+            than we&apos;d admit.
           </p>
         </div>
 
