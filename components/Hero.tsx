@@ -44,10 +44,6 @@ export function Hero() {
       </div>
 
       <div className="hero__inner hero__inner--split">
-        <div className="hero__phone-col">
-          <LiveDemo />
-        </div>
-
         <div className="hero__text-col">
           <span className="eyebrow hero__eye" data-in>
             <span className="eyebrow-dot" aria-hidden="true" />
@@ -117,6 +113,10 @@ export function Hero() {
           <p className="hero__hint" data-in>
             7-day free trial. No account. Cancel anytime.
           </p>
+        </div>
+
+        <div className="hero__phone-col">
+          <LiveDemo />
         </div>
       </div>
     </section>
