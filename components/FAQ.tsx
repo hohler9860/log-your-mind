@@ -50,7 +50,7 @@ export function FAQ() {
           </h2>
         </div>
 
-        <div className="grid grid--2 faqs">
+        <div className="faqs faqs--solo">
           {QS.map((item) => (
             <details className="card faq-card" data-in key={item.q}>
               <summary>
