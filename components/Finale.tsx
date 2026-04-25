@@ -5,7 +5,7 @@ import { isValidEmail, markPopupSeen } from "@/lib/email";
 
 export function Finale() {
   const [hint, setHint] = useState({
-    text: "We'll email you the TestFlight link the moment it ships.",
+    text: "",
     kind: "idle" as "idle" | "ok" | "err",
   });
 
@@ -54,14 +54,6 @@ export function Finale() {
             Say it out loud. <em className="display-serif">Stop carrying it around.</em>
           </h2>
 
-          <p className="finale__sub">
-            Open the app and answer the daily question, or just hit record
-            and talk about whatever&apos;s on your mind. Mialo transcribes,
-            tags how you sounded, and follows up days later like a thoughtful
-            friend. Drop your email and we&apos;ll send the TestFlight link
-            the minute it&apos;s ready.
-          </p>
-
           <form className="finale__form" onSubmit={onSubmit} noValidate>
             <label className="finale__label" htmlFor="finaleEmail">
               Your email
@@ -94,7 +86,7 @@ export function Finale() {
                 </svg>
               </button>
             </div>
-            <p className={hintClass}>{hint.text}</p>
+            {hint.text && <p className={hintClass}>{hint.text}</p>}
           </form>
 
           <p className="finale__meta">

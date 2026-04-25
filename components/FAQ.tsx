@@ -24,10 +24,6 @@ const QS = [
     a: "It's gone. No backups, no shadow copies, no \"we still have this on a server for debugging.\" If you want to wipe data without uninstalling, there's a one-tap reset in Settings.",
   },
   {
-    q: "Will the follow-up notifications drive me crazy?",
-    a: "No. They're spaced out, gentle, and you can dismiss any of them with one tap. If you don't engage, Mialo backs off. The whole point is to feel like a friend, not a habit tracker.",
-  },
-  {
     q: "Why voice and not typing?",
     a: "Typing makes you edit. You stop the thought, fix the spelling, second-guess the tone. By the time you hit send, you've sanded down the thing you actually meant. Speaking skips all of that.",
   },
