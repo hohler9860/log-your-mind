@@ -4,34 +4,17 @@ import { useEffect, useRef } from "react";
 import { LiveDemo } from "./LiveDemo";
 
 const ROTOR_WORDS = [
-  "Stop carrying it around.",
-  "Stop holding it in.",
-  "Stop sleeping on it.",
-  "Stop living in your head.",
-  "Stop drafting it forever.",
+  "Say it out loud.",
+  "Say it in private.",
+  "Say it to yourself.",
+  "Say it clearly.",
+  "Say it at your pace.",
 ];
 
 export function Hero() {
-  const charsRef = useRef<HTMLSpanElement | null>(null);
   const rotorRef = useRef<HTMLSpanElement | null>(null);
 
-  // split "Say it out loud." into chars for the reveal
-  useEffect(() => {
-    const el = charsRef.current;
-    if (!el || el.dataset.split === "1") return;
-    const text = el.textContent || "";
-    el.textContent = "";
-    text.split("").forEach((ch, i) => {
-      const span = document.createElement("span");
-      span.className = "ch";
-      span.textContent = ch === " " ? " " : ch;
-      span.style.transitionDelay = `${i * 32}ms`;
-      el.appendChild(span);
-    });
-    el.dataset.split = "1";
-  }, []);
-
-  // rotor for the second headline line
+  // rotor on the italic-amber accent line
   useEffect(() => {
     const rotor = rotorRef.current;
     if (!rotor) return;
@@ -67,10 +50,7 @@ export function Hero() {
         </span>
 
         <h1 className="display hero__title">
-          <span className="line line--accent" data-chars ref={charsRef}>
-            Say it out loud.
-          </span>
-          <span className="line hero__rotor-line">
+          <span className="line line--accent hero__rotor-line">
             <span className="rotor" aria-live="polite" ref={rotorRef}>
               {ROTOR_WORDS.map((w, i) => (
                 <span
@@ -82,6 +62,7 @@ export function Hero() {
               ))}
             </span>
           </span>
+          <span className="line">Stop carrying it around.</span>
         </h1>
 
         <p className="hero__sub" data-in>

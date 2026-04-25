@@ -251,15 +251,6 @@ button{ font: inherit; color: inherit; cursor: pointer; background: none; border
   letter-spacing: -0.02em;
 }
 .hero__rotor-line{ margin-top: 4px; }
-/* the second-line rotor is solid charcoal — override the default amber/italic rotor styling */
-.hero__title .rotor__word{
-  color: inherit;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: inherit;
-  letter-spacing: inherit;
-  white-space: normal;
-}
 
 /* inline-grid so all rotor words stack into one cell; grid auto-sizes to widest */
 .rotor{
