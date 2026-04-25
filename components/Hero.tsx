@@ -3,8 +3,17 @@
 import { useEffect, useRef } from "react";
 import { LiveDemo } from "./LiveDemo";
 
+const ROTOR_WORDS = [
+  "Stop carrying it around.",
+  "Stop holding it in.",
+  "Stop sleeping on it.",
+  "Stop living in your head.",
+  "Stop drafting it forever.",
+];
+
 export function Hero() {
   const charsRef = useRef<HTMLSpanElement | null>(null);
+  const rotorRef = useRef<HTMLSpanElement | null>(null);
 
   // split "Say it out loud." into chars for the reveal
   useEffect(() => {
@@ -20,6 +29,27 @@ export function Hero() {
       el.appendChild(span);
     });
     el.dataset.split = "1";
+  }, []);
+
+  // rotor for the second headline line
+  useEffect(() => {
+    const rotor = rotorRef.current;
+    if (!rotor) return;
+    const words = Array.from(
+      rotor.querySelectorAll<HTMLSpanElement>(".rotor__word")
+    );
+    if (!words.length) return;
+    const prefersReduced = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    if (prefersReduced) return;
+    let i = 0;
+    const id = window.setInterval(() => {
+      words[i].classList.remove("is-on");
+      i = (i + 1) % words.length;
+      words[i].classList.add("is-on");
+    }, 2800);
+    return () => window.clearInterval(id);
   }, []);
 
   return (
@@ -40,7 +70,18 @@ export function Hero() {
           <span className="line line--accent" data-chars ref={charsRef}>
             Say it out loud.
           </span>
-          <span className="line">Stop carrying it around.</span>
+          <span className="line hero__rotor-line">
+            <span className="rotor" aria-live="polite" ref={rotorRef}>
+              {ROTOR_WORDS.map((w, i) => (
+                <span
+                  key={w}
+                  className={`rotor__word ${i === 0 ? "is-on" : ""}`}
+                >
+                  {w}
+                </span>
+              ))}
+            </span>
+          </span>
         </h1>
 
         <p className="hero__sub" data-in>
