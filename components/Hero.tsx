@@ -3,19 +3,10 @@
 import { useEffect, useRef } from "react";
 import { LiveDemo } from "./LiveDemo";
 
-const ROTOR_WORDS = [
-  "out loud.",
-  "in private.",
-  "to yourself.",
-  "clearly.",
-  "at your pace.",
-];
-
 export function Hero() {
-  const rotorRef = useRef<HTMLSpanElement | null>(null);
   const charsRef = useRef<HTMLSpanElement | null>(null);
 
-  // split "Think" into chars for the reveal
+  // split "Say it out loud." into chars for the reveal
   useEffect(() => {
     const el = charsRef.current;
     if (!el || el.dataset.split === "1") return;
@@ -24,31 +15,11 @@ export function Hero() {
     text.split("").forEach((ch, i) => {
       const span = document.createElement("span");
       span.className = "ch";
-      span.textContent = ch === " " ? " " : ch;
-      span.style.transitionDelay = `${i * 40}ms`;
+      span.textContent = ch === " " ? " " : ch;
+      span.style.transitionDelay = `${i * 32}ms`;
       el.appendChild(span);
     });
     el.dataset.split = "1";
-  }, []);
-
-  // rotor rotation (CSS grid handles sizing — no JS measurement needed)
-  useEffect(() => {
-    const rotor = rotorRef.current;
-    if (!rotor) return;
-    const words = Array.from(rotor.querySelectorAll<HTMLSpanElement>(".rotor__word"));
-    if (!words.length) return;
-
-    const prefersReduced =
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReduced) return;
-
-    let i = 0;
-    const id = window.setInterval(() => {
-      words[i].classList.remove("is-on");
-      i = (i + 1) % words.length;
-      words[i].classList.add("is-on");
-    }, 2600);
-    return () => window.clearInterval(id);
   }, []);
 
   return (
@@ -62,36 +33,25 @@ export function Hero() {
       <div className="hero__inner">
         <span className="eyebrow hero__eye" data-in>
           <span className="eyebrow-dot" aria-hidden="true" />
-          <span>A private voice journal · On-device only · iPhone</span>
+          <span>Voice journal · Built for fast minds</span>
         </span>
 
         <h1 className="display hero__title">
-          <span className="line" data-chars ref={charsRef}>
-            Think
+          <span className="line line--accent" data-chars ref={charsRef}>
+            Say it out loud.
           </span>
-          <span className="line hero__rotor-line">
-            <span className="rotor" aria-live="polite" ref={rotorRef}>
-              {ROTOR_WORDS.map((w, i) => (
-                <span
-                  key={w}
-                  className={`rotor__word ${i === 0 ? "is-on" : ""}`}
-                >
-                  {w}
-                </span>
-              ))}
-            </span>
-          </span>
+          <span className="line">Stop carrying it around.</span>
         </h1>
 
         <p className="hero__sub" data-in>
-          You don&apos;t need another journaling app. You need a button that
-          listens. Thirty seconds of talking out loud and the stuff in your
-          head is out of your head.
+          A voice journal for the person who thinks too fast to type. Speak
+          for thirty seconds. The AI listens, transcribes, and checks back
+          on you days later like a thoughtful friend.
         </p>
 
         <div className="hero__cta" data-in>
           <a href="#app" className="btn-primary" data-magnetic>
-            Get the app
+            Try it free
             <svg
               width="18"
               height="18"
@@ -121,12 +81,12 @@ export function Hero() {
             >
               <polygon points="5 3 19 12 5 21 5 3" />
             </svg>
-            See how it works
+            How it works
           </a>
         </div>
 
         <p className="hero__hint" data-in>
-          No account. No cloud. No email to verify.
+          7-day free trial. No card. No account. Cancel anytime.
         </p>
 
         <LiveDemo />

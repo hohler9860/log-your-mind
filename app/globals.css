@@ -243,6 +243,13 @@ button{ font: inherit; color: inherit; cursor: pointer; background: none; border
   max-width: 16ch;
 }
 .hero__title .line{ display: block; }
+.hero__title .line--accent{
+  color: var(--amber);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
 .hero__rotor-line{ margin-top: 4px; }
 
 /* inline-grid so all rotor words stack into one cell; grid auto-sizes to widest */
