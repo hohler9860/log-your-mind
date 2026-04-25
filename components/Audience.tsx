@@ -124,7 +124,7 @@ export function Audience() {
       <div className="container">
         <div className="center">
           <span className="eyebrow" data-in>
-            Built for ADHD brains
+            Built for unique brains
           </span>
           <h2 className="display section__h" data-in style={{ maxWidth: "20ch" }}>
             Designed for fast minds. <em className="display-serif">Works for anyone who thinks out loud.</em>

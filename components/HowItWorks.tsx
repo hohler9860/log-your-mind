@@ -17,7 +17,7 @@ const STEPS: Step[] = [
   {
     num: "01",
     title: "A question finds you",
-    body: "The app opens with a question picked for you. Morning ones are different from evening ones. Sixty-five prompts across thirteen categories.",
+    body: "The app opens with a question picked for you. Morning ones are different from evening ones. Or skip it entirely and just talk about whatever's on your mind.",
     media: <StepQuestion />,
     tone: "cream",
     ico: (

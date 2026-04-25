@@ -49,21 +49,22 @@ export function Pricing() {
             Free for a week. <em className="display-serif">Cheap if you stay.</em>
           </h2>
           <p className="section__sub" data-in>
-            Seven days of full access. No card up front. If it sticks, the
-            yearly plan is under five dollars a month.
+            Seven days of full access. If it sticks, the yearly plan is under
+            five dollars a month.
           </p>
         </div>
 
         <div className="price-grid" data-in>
           <article className="price-card price-card--trial">
-            <span className="price-card__eye">Start here</span>
-            <h3 className="price-card__h">7-day free trial</h3>
-            <div className="price-card__amount">
-              <span className="price-card__num">$0</span>
-              <span className="price-card__per">for the first week</span>
+            <div className="price-card__top">
+              <span className="price-card__eye">Start here</span>
+              <h3 className="price-card__h">7-day free trial</h3>
+              <div className="price-card__amount">
+                <span className="price-card__num">$0</span>
+                <span className="price-card__per">for the first week</span>
+              </div>
+              <p className="price-card__sub">Full access. Cancel anytime.</p>
             </div>
-            <p className="price-card__sub">Full access. No card required.</p>
-            <a href="#app" className="btn-primary price-card__cta">Try it free</a>
             <ul className="price-card__list">
               {TRIAL_INCLUDES.map((t) => (
                 <li key={t}>
@@ -72,39 +73,44 @@ export function Pricing() {
                 </li>
               ))}
             </ul>
+            <a href="#app" className="btn-primary price-card__cta">Try it free</a>
           </article>
 
           <article className="price-card price-card--year price-card--feature">
-            <span className="price-card__badge">Save 48%</span>
-            <span className="price-card__eye">Most pick this</span>
-            <h3 className="price-card__h">Yearly</h3>
-            <div className="price-card__amount">
-              <span className="price-card__num">$49</span>
-              <span className="price-card__per">/year</span>
+            <span className="price-card__badge">Save 18%</span>
+            <div className="price-card__top">
+              <span className="price-card__eye">Most pick this</span>
+              <h3 className="price-card__h">Yearly</h3>
+              <div className="price-card__amount">
+                <span className="price-card__num">$49</span>
+                <span className="price-card__per">/year</span>
+              </div>
+              <p className="price-card__sub">$4.08 a month, billed once.</p>
             </div>
-            <p className="price-card__sub">$4.08 a month, billed once.</p>
-            <a href="#app" className="btn-primary price-card__cta">Start free trial</a>
             <ul className="price-card__list">
               <li><span className="tick">✓</span>Everything in the trial, forever</li>
               <li><span className="tick">✓</span>One charge a year, then nothing</li>
               <li><span className="tick">✓</span>Cancel anytime in Settings</li>
             </ul>
+            <a href="#app" className="btn-primary price-card__cta">Start free trial</a>
           </article>
 
           <article className="price-card price-card--month">
-            <span className="price-card__eye">Or month-to-month</span>
-            <h3 className="price-card__h">Monthly</h3>
-            <div className="price-card__amount">
-              <span className="price-card__num">$7.99</span>
-              <span className="price-card__per">/month</span>
+            <div className="price-card__top">
+              <span className="price-card__eye">Or month-to-month</span>
+              <h3 className="price-card__h">Monthly</h3>
+              <div className="price-card__amount">
+                <span className="price-card__num">$4.99</span>
+                <span className="price-card__per">/month</span>
+              </div>
+              <p className="price-card__sub">No commitment, slightly more.</p>
             </div>
-            <p className="price-card__sub">No commitment, slightly more.</p>
-            <a href="#app" className="btn-secondary price-card__cta">Pick monthly</a>
             <ul className="price-card__list">
               <li><span className="tick">✓</span>Everything in the trial</li>
               <li><span className="tick">✓</span>Cancel anytime</li>
               <li><span className="tick">✓</span>Switch to yearly later</li>
             </ul>
+            <a href="#app" className="btn-secondary price-card__cta">Pick monthly</a>
           </article>
         </div>
 

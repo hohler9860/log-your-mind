@@ -1,5 +1,9 @@
 const QS = [
   {
+    q: "Do I have to answer the daily prompt?",
+    a: "No. The prompt is there if you want a head start, but you can ignore it and just talk about whatever's on your mind. The app is a place to think out loud and have a record of it later. A prompt is one way in, free-form is another.",
+  },
+  {
     q: "Is Mialo a therapy replacement?",
     a: "No. It's a place to get the stuff in your head out of your head. If you need a therapist, see a therapist. Mialo makes those sessions, and the weeks in between, a lot more useful.",
   },

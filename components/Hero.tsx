@@ -44,9 +44,11 @@ export function Hero() {
         </h1>
 
         <p className="hero__sub" data-in>
-          A voice journal for the person who thinks too fast to type. Speak
-          for thirty seconds. The AI listens, transcribes, and checks back
-          on you days later like a thoughtful friend.
+          A voice journal for the person who thinks too fast to type. Open
+          the app and answer the daily question, or just hit record and talk
+          about whatever&apos;s on your mind. Mialo transcribes it, tags how
+          you sounded, and checks back on you days later like a thoughtful
+          friend.
         </p>
 
         <div className="hero__cta" data-in>
@@ -86,7 +88,7 @@ export function Hero() {
         </div>
 
         <p className="hero__hint" data-in>
-          7-day free trial. No card. No account. Cancel anytime.
+          7-day free trial. No account. Cancel anytime.
         </p>
 
         <LiveDemo />

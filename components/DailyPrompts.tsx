@@ -26,8 +26,9 @@ export function DailyPrompts() {
           </h2>
           <p className="section__sub" data-in>
             Sixty-five prompts across thirteen categories. Morning ones are
-            different from evening ones. The app picks based on what you said
-            mattered to you when you set it up.
+            different from evening ones. Or skip the prompt entirely and just
+            talk about whatever&apos;s on your mind. Either way, it&apos;s
+            saved and waiting when you come back.
           </p>
         </div>
 
@@ -46,7 +47,8 @@ export function DailyPrompts() {
         </div>
 
         <p className="prompt-foot" data-in>
-          Plus a tap to swap if today&apos;s question doesn&apos;t fit.
+          Tap the prompt to swap it. Tap the mic to skip it and just talk.
+          Both give you something to look back on in a few weeks.
         </p>
       </div>
     </section>
