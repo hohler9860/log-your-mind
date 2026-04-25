@@ -114,7 +114,7 @@ export function McpTerm() {
             <rect x="3" y="11" width="18" height="11" rx="2" />
             <path d="M7 11V7a5 5 0 0 1 10 0v4" />
           </svg>
-          claude.ai/chat/log-your-mind
+          claude.ai/chat/mialo
         </span>
         <span className="claude-win__menu">
           <span />
@@ -168,7 +168,7 @@ export function McpTerm() {
                   </svg>
                   Called MCP tool
                 </span>
-                <span className="claude-tool__src">log_your_mind.read_context</span>
+                <span className="claude-tool__src">mialo.read_context</span>
               </div>
               <div className="claude-tool__body">
                 {ROWS.map((r, i) => (

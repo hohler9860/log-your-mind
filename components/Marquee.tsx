@@ -13,7 +13,7 @@ const LINES = [
 export function Marquee() {
   const doubled = [...LINES, ...LINES];
   return (
-    <section className="marquee" aria-label="Why Log Your Mind">
+    <section className="marquee" aria-label="Why Mialo">
       <div className="marquee__track">
         {doubled.map((line, i) => (
           <span key={`${line}-${i}`} style={{ display: "inline-flex", alignItems: "center", gap: 44 }}>

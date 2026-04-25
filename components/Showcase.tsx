@@ -29,7 +29,7 @@ export function Showcase() {
         <div className="showcase__render" data-in>
           <Image
             src="/assets/showcase-trio.webp"
-            alt="Log Your Mind app screens. Your Logs, Your Account, and MCP endpoint."
+            alt="Mialo app screens. Your Logs, Your Account, and MCP endpoint."
             width={2000}
             height={2200}
             sizes="(max-width: 900px) 100vw, 1100px"

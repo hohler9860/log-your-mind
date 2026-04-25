@@ -10,9 +10,8 @@ export function BrandMark() {
 export function BrandWordmark() {
   return (
     <span className="brand-wordmark">
-      <span className="brand-wordmark__log">Log</span>
-      <span className="brand-wordmark__your">your</span>
-      <span className="brand-wordmark__mind">Mind</span>
+      <span className="brand-wordmark__mi">Mi</span>
+      <span className="brand-wordmark__alo">alo</span>
     </span>
   );
 }

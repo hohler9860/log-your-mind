@@ -33,7 +33,7 @@ export function Footer() {
           </svg>
         </button>
 
-        <a href="#top" className="foot__brand" aria-label="Log Your Mind">
+        <a href="#top" className="foot__brand" aria-label="Mialo">
           <BrandMark />
           <BrandWordmark />
         </a>
@@ -42,8 +42,7 @@ export function Footer() {
           <em>Made for people who think out loud.</em>
         </p>
         <p className="foot__meta">
-          © {new Date().getFullYear()} Log Your Mind · Your thoughts stay on
-          your phone.
+          © {new Date().getFullYear()} Mialo · Your thoughts stay on your phone.
         </p>
       </div>
     </footer>

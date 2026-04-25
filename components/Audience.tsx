@@ -106,7 +106,7 @@ const AUD = [
     motif: <VerbalMotif />,
     name: "Verbal processors",
     lede: "You don't know until you say it.",
-    body: "Talking is how you find what you actually think. Log Your Mind gives you somewhere to do it that isn't your group chat.",
+    body: "Talking is how you find what you actually think. Mialo gives you somewhere to do it that isn't your group chat.",
     sig: "For the ones who talk to think.",
   },
   {

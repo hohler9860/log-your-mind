@@ -25,12 +25,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Log Your Mind. Think out loud. Keep it to yourself.",
+  title: "Mialo. Say it out loud.",
   description:
-    "A private voice journal for people who think better out loud. Press record, talk, let go. On-device. Encrypted. No accounts.",
+    "A voice journal for fast minds. Speak for thirty seconds, the AI listens, transcribes, and checks back on you like a thoughtful friend.",
   openGraph: {
-    title: "Log Your Mind",
-    description: "Press record. Speak your mind. Patterns find themselves.",
+    title: "Mialo",
+    description: "Say it out loud. A voice journal that listens back.",
     type: "website",
   },
   icons: {

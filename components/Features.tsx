@@ -94,7 +94,7 @@ function McpViz() {
                     <path d="M12 3v2M12 19v2M3 12h2M19 12h2" />
                   </svg>
                 </span>
-                read_context · log_your_mind
+                read_context · mialo
               </span>
               <p>three rough nights, work piling up, and you&apos;re still sitting with that conversation with your dad.</p>
             </div>

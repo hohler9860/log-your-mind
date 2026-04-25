@@ -1,5 +1,5 @@
 /* ==================================================================
-   Log Your Mind — global styles (Next.js port of dialo DNA, orange + white)
+   Mialo — global styles (Next.js port of dialo DNA, orange + white)
    ================================================================== */
 
 :root{
@@ -141,10 +141,9 @@ button{ font: inherit; color: inherit; cursor: pointer; background: none; border
 .brand-mark__dot{ width: 9px; height: 9px; border-radius: 50%; background: var(--amber); animation: pulse 2s ease-in-out infinite; box-shadow: 0 0 8px rgba(245,166,35,0.5); }
 .brand-mark__ring{ position: absolute; inset: -4px; border-radius: 50%; border: 1px solid var(--amber); opacity: 0; animation: ring-expand 2.4s var(--ease) infinite; }
 @keyframes ring-expand{ 0%{ opacity: 0.6; transform: scale(0.8); } 70%,100%{ opacity: 0; transform: scale(1.4); } }
-.brand-wordmark{ font-size: 15px; letter-spacing: -0.01em; display: inline-flex; gap: 5px; align-items: baseline; color: var(--charcoal); }
-.brand-wordmark__log{ font-weight: 700; }
-.brand-wordmark__your{ font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--amber); font-size: 1.05em; letter-spacing: -0.01em; }
-.brand-wordmark__mind{ font-weight: 700; }
+.brand-wordmark{ font-size: 17px; letter-spacing: -0.015em; display: inline-flex; gap: 0; align-items: baseline; color: var(--charcoal); }
+.brand-wordmark__mi{ font-weight: 700; }
+.brand-wordmark__alo{ font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--amber); font-size: 1.08em; letter-spacing: -0.005em; }
 
 /* ======== NAV ======== */
 .nav{ position: fixed; top: 0; left: 0; right: 0; z-index: 60; }

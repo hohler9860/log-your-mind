@@ -45,7 +45,7 @@ export function Nav() {
             <a
               href="#top"
               className="nav__brand"
-              aria-label="Log Your Mind home"
+              aria-label="Mialo home"
             >
               <BrandMark />
               <BrandWordmark />

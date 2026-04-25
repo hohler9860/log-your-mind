@@ -17,8 +17,8 @@ export function Problem() {
           </h2>
           <p className="section__sub" data-in>
             You open a journal app, stare at a cursor, close it. Your mouth
-            moves faster than your fingers. Log Your Mind skips the blank
-            page. The moment you press record, it&apos;s already working.
+            moves faster than your fingers. Mialo skips the blank page. The
+            moment you press record, it&apos;s already working.
           </p>
         </div>
 

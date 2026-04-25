@@ -203,7 +203,7 @@ export function LiveDemo() {
         <div className="hero__phone-render">
           <Image
             src="/assets/hero-phone.webp"
-            alt="Log Your Mind app. Tap to speak."
+            alt="Mialo app. Tap to speak."
             width={1400}
             height={2769}
             sizes="(max-width: 900px) 60vw, 420px"
